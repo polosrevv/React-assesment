@@ -1,14 +1,42 @@
-.StudentCard{
-    Background-color: black;
+.StudentCard {
+    background-color: black;
+    border-radius: 0;
+    box-sizing: border-box;
     color: white;
+    min-width: 0;
+    padding: 16px;
+    text-align: left;
 }
 
-.StudentCard h1{
-    font-size: 24px;
-    font-style:bold;
+.StudentCard-header {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    margin-bottom: 12px;
 }
 
-.StudentCard p1{
-    font-size: 12px;
-    font-style: bold;
+.StudentCard h2 {
+    color: white;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    min-width: 0;
+}
+
+.StudentCard-id {
+    flex: 0 0 auto;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: right;
+    color: grey;
+    /* this raises the id up a bit by the Y axis, very good thing I learned today */
+    transform: translate(-75px, -15px);
+}
+
+.StudentCard p {
+    font-size: 14px;
+    margin: 4px 0 0;
 }

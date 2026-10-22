@@ -2,10 +2,10 @@ import '../styles/ClassCard.css'
 
 function ClassCard({title, subtitle, children}) {
     return (
-        <main>
+        <main className="ClassCard">
             <h1>{title}</h1>
             <p>{subtitle}</p>
-            <section>{children}</section>
+            <section className="student-grid">{children}</section>
         </main>
     )
 }

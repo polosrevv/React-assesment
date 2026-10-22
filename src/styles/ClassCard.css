@@ -1,0 +1,28 @@
+/* align title and subtitle to the left */
+.ClassCard{
+    background-color:black;
+}
+.ClassCard > h1{
+    text-align: left;
+}
+
+.ClassCard > p {
+	text-align: left;
+}
+
+/* Align the children to the middle and make them wrap */
+.student-grid {
+	background-color: black;
+	display: grid;
+	gap: 0;
+    /* before you question my intellectualism, I googled this, I know what the rest of the CSS does but I CANNOT explain this fully */
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+	padding: 0;
+}
+
+@media (max-width: 520px) {
+	.student-grid {
+		grid-template-columns: 1fr;
+		padding: 0;
+	}
+}
