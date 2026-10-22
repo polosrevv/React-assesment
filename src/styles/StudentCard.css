@@ -1,0 +1,14 @@
+.StudentCard{
+    Background-color: black;
+    color: white;
+}
+
+.StudentCard h1{
+    font-size: 24px;
+    font-style:bold;
+}
+
+.StudentCard p1{
+    font-size: 12px;
+    font-style: bold;
+}
